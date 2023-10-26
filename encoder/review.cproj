@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>7.0</ProjectVersion>
+    <ToolchainName>com.Atmel.AVRGCC8.C</ToolchainName>
+    <ProjectGuid>dce6c7e3-ee26-4d79-826b-08594b9ad897</ProjectGuid>
+    <avrdevice>ATmega32A</avrdevice>
+    <avrdeviceseries>none</avrdeviceseries>
+    <OutputType>Executable</OutputType>
+    <Language>C</Language>
+    <OutputFileName>$(MSBuildProjectName)</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
+    <AssemblyName>review</AssemblyName>
+    <Name>review</Name>
+    <RootNamespace>review</RootNamespace>
+    <ToolchainFlavour>Native</ToolchainFlavour>
+    <KeepTimersRunning>true</KeepTimersRunning>
+    <OverrideVtor>false</OverrideVtor>
+    <CacheFlash>true</CacheFlash>
+    <ProgFlashFromRam>true</ProgFlashFromRam>
+    <RamSnippetAddress />
+    <UncachedRange />
+    <preserveEEPROM>true</preserveEEPROM>
+    <OverrideVtorValue />
+    <BootSegment>2</BootSegment>
+    <ResetRule>0</ResetRule>
+    <eraseonlaunchrule>0</eraseonlaunchrule>
+    <EraseKey />
+    <AsfFrameworkConfig>
+      <framework-data xmlns="">
+        <options />
+        <configurations />
+        <files />
+        <documentation help="" />
+        <offline-documentation help="" />
+        <dependencies>
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.52.0" />
+        </dependencies>
+      </framework-data>
+    </AsfFrameworkConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <ToolchainSettings>
+      <AvrGcc>
+        <avrgcc.common.Device>-mmcu=atmega32a -B "%24(PackRepoDir)\atmel\ATmega_DFP\1.7.374\gcc\dev\atmega32a"</avrgcc.common.Device>
+        <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+        <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+        <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+        <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+        <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
+        <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+        <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+        <avrgcc.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>NDEBUG</Value>
+          </ListValues>
+        </avrgcc.compiler.symbols.DefSymbols>
+        <avrgcc.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.7.374\include\</Value>
+          </ListValues>
+        </avrgcc.compiler.directories.IncludePaths>
+        <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
+        <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+        <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+        <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+        <avrgcc.linker.libraries.Libraries>
+          <ListValues>
+            <Value>libm</Value>
+          </ListValues>
+        </avrgcc.linker.libraries.Libraries>
+        <avrgcc.assembler.general.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.7.374\include\</Value>
+          </ListValues>
+        </avrgcc.assembler.general.IncludePaths>
+      </AvrGcc>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <ToolchainSettings>
+      <AvrGcc>
+  <avrgcc.common.Device>-mmcu=atmega32a -B "%24(PackRepoDir)\atmel\ATmega_DFP\1.7.374\gcc\dev\atmega32a"</avrgcc.common.Device>
+  <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+  <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+  <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+  <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+  <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
+  <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcc.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>DEBUG</Value>
+    </ListValues>
+  </avrgcc.compiler.symbols.DefSymbols>
+  <avrgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.7.374\include\</Value>
+    </ListValues>
+  </avrgcc.compiler.directories.IncludePaths>
+  <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
+  <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+  <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
+  <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+  <avrgcc.linker.libraries.Libraries>
+    <ListValues>
+      <Value>libm</Value>
+    </ListValues>
+  </avrgcc.linker.libraries.Libraries>
+  <avrgcc.assembler.general.IncludePaths>
+    <ListValues>
+      <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.7.374\include\</Value>
+    </ListValues>
+  </avrgcc.assembler.general.IncludePaths>
+  <avrgcc.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcc.assembler.debugging.DebugLevel>
+</AvrGcc>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="generic_library\bit_math.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="generic_library\delay.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="generic_library\STD_data_types.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="HAL\DC motor\headers\DC_motor.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="HAL\DC motor\sources\DC_motor.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="HAL\LCD_4_bit\headers\LCD_4_bit.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="HAL\LCD_4_bit\sources\LCD_4_bit.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="HAL\LCD_8_bit\headers\LCD_8_bit.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="HAL\LCD_8_bit\sources\LCD_8_bits.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="HAL\relay\headers\relay.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="HAL\relay\sources\relay.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="HAL\rotary_encoder\headers\rotary_encoder.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="HAL\rotary_encoder\sources\rotary_encoder.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="main.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\DIO\headers\DIO.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\DIO\sources\DIO.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\EXT_INT\headers\EXT_INT.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\EXT_INT\headers\EXT_INT_REG.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\EXT_INT\sources\EXT_INT.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\GINT\headers\GINT.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\GINT\sources\GINT.c">
+      <SubType>compile</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="HAL\DC motor" />
+    <Folder Include="HAL\DC motor\headers" />
+    <Folder Include="HAL\DC motor\sources" />
+    <Folder Include="HAL\LCD_4_bit" />
+    <Folder Include="HAL\LCD_4_bit\headers" />
+    <Folder Include="HAL\LCD_4_bit\sources" />
+    <Folder Include="HAL\LCD_8_bit" />
+    <Folder Include="HAL\LCD_8_bit\headers" />
+    <Folder Include="HAL\LCD_8_bit\sources" />
+    <Folder Include="HAL\rotary_encoder" />
+    <Folder Include="HAL\relay" />
+    <Folder Include="HAL\relay\headers" />
+    <Folder Include="HAL\relay\sources" />
+    <Folder Include="HAL\rotary_encoder\headers" />
+    <Folder Include="HAL\rotary_encoder\sources" />
+    <Folder Include="MCAL" />
+    <Folder Include="HAL" />
+    <Folder Include="generic_library" />
+    <Folder Include="MCAL\DIO" />
+    <Folder Include="MCAL\DIO\headers" />
+    <Folder Include="MCAL\DIO\sources" />
+    <Folder Include="MCAL\GINT" />
+    <Folder Include="MCAL\GINT\headers" />
+    <Folder Include="MCAL\GINT\headers\NewFolder1\" />
+    <Folder Include="MCAL\GINT\sources" />
+    <Folder Include="MCAL\EXT_INT" />
+    <Folder Include="MCAL\EXT_INT\headers" />
+    <Folder Include="MCAL\EXT_INT\sources" />
+  </ItemGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
+</Project>
