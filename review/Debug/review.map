@@ -765,16 +765,16 @@ END GROUP
  .debug_abbrev  0x00000be0      0x16b MCAL/EXT_INT/sources/EXT_INT.o
  .debug_abbrev  0x00000d4b       0x51 MCAL/GINT/sources/GINT.o
 
-.debug_line     0x00000000     0x12bf
+.debug_line     0x00000000     0x12d2
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x00000000      0x116 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega32a/avr5/crtatmega32a.o
  .debug_line    0x00000116      0x3bf HAL/LCD_4_bit/sources/LCD_4_bit.o
  .debug_line    0x000004d5      0x187 HAL/relay/sources/relay.o
  .debug_line    0x0000065c      0x421 HAL/rotary_encoder/sources/rotary_encoder.o
- .debug_line    0x00000a7d      0x2c0 main.o
- .debug_line    0x00000d3d      0x243 MCAL/DIO/sources/DIO.o
- .debug_line    0x00000f80      0x278 MCAL/EXT_INT/sources/EXT_INT.o
- .debug_line    0x000011f8       0xc7 MCAL/GINT/sources/GINT.o
+ .debug_line    0x00000a7d      0x2d3 main.o
+ .debug_line    0x00000d50      0x243 MCAL/DIO/sources/DIO.o
+ .debug_line    0x00000f93      0x278 MCAL/EXT_INT/sources/EXT_INT.o
+ .debug_line    0x0000120b       0xc7 MCAL/GINT/sources/GINT.o
 
 .debug_frame    0x00000000      0x580
  *(.debug_frame)
